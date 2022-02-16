@@ -203,8 +203,9 @@ p {
 /* Hero Section */
 #hero {
   background-image: url(/img/background.jpg);
-  /* background-color: black; */
   background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   z-index: 1;
 }
@@ -458,6 +459,12 @@ p {
   opacity: 0.7;
 }
 
+#projects .pig-game::after,
+#projects .guess-my-number::after {
+  background-color: transparent;
+  z-index: -1;
+}
+
 /* When I'm hover the img size increase */
 
 #projects .project-item:hover .project-img img {
@@ -522,6 +529,9 @@ p {
 /* End About Section */
 
 /* Contact Section */
+a {
+  color: black;
+}
 #contact .contact {
   flex-direction: column;
   max-width: 1200px;
